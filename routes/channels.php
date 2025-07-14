@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Broadcast;
 
-Broadcast::channel('group.{groupId}', function ($user, $groupId) {
+Broadcast::channel('NewWords', function ($user) {
 
     // default
     if(!$user){

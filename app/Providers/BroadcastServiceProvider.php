@@ -20,11 +20,7 @@ class BroadcastServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-         // Web + 認証ユーザーに限定したルート設定
-        // Broadcast::routes([
-        //     'middleware' => ['web', 'auth'], // 'auth:web' と同等
-        // ]);
-
-        // require base_path('routes/channels.php');
+        Broadcast::routes(); 
+        require base_path('routes/channels.php');
     }
 }

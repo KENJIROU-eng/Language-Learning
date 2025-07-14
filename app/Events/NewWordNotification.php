@@ -34,7 +34,7 @@ class NewWordNotification implements ShouldBroadcast
     public function broadcastOn(): array
     {
         return [
-            new Channel('NewWords'),
+            new PrivateChannel('NewWords'),
         ];
     }
 
