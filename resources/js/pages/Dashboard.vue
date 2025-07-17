@@ -64,6 +64,9 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import axios from '../bootstrap.js'
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 const user = ref(null)
 const error = ref('')
@@ -82,12 +85,12 @@ const navigateToCreate = () => {
         router.push('/learn/create')
     }
 
-    const navigateToList = () => {
-        router.push('/vue/learn/fileList')
-    }
-    </script>
+const navigateToList = () => {
+    router.push('/vue/learn/fileList')
+}
+</script>
 
-    <style scoped>
+<style scoped>
     .container-3d {
         perspective: 1000px;
     }
@@ -111,7 +114,7 @@ const navigateToCreate = () => {
     }
 
     .animate-spin-slow {
-        animation: spin-slow 20s linear infinite;
+        animation: spin-slow 10s linear infinite;
         /* 回転の内部にある子要素も3D空間として扱う */
         transform-style: preserve-3d;
         /* 中心を軸に回転させる。 */
@@ -119,7 +122,7 @@ const navigateToCreate = () => {
     }
 
     .animate-spin-slow-reverse {
-        animation: spin-slow-reverse 20s linear infinite;
+        animation: spin-slow-reverse 10s linear infinite;
         /* 回転の内部にある子要素も3D空間として扱う */
         transform-style: preserve-3d;
         /* 中心を軸に回転させる。 */

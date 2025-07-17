@@ -20,6 +20,3 @@ Route::middleware(['web', 'auth:sanctum'])
         Route::get('/vue/learn/{fileName}/memorize', [LearnController::class, 'memorize']);
         Route::get('/vue/learn/notice', [LearnController::class, 'notice']);
     });
-
-// Route::get('/vue/test', [LearnController::class, 'vueTest']);
-
