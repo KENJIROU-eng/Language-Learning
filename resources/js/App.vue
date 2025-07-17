@@ -1,7 +1,7 @@
 <template>
     <div>
         <nav class="p-4 bg-gray-800 text-white flex gap-4">
-            <router-link to="/learn/create">Create</router-link>
+            <router-link to="/dashboard">Dashboard</router-link>
             <div v-if='showNotice' class="mx-auto bg-sky-500 text-white">
                 <p>{{ originalText }}</p>
                 <p>{{ translatedText }}</p>
@@ -26,37 +26,37 @@
     const translatedText = ref('');
     const router = useRouter();
 
-    onMounted(() => {
-    // Echo が初期化されているか確認
-    if (!window.Echo) {
-        console.error('❌ Echo が定義されていません')
-        return
-    }
+    // onMounted(() => {
+    // // Echo が初期化されているか確認
+    // if (!window.Echo) {
+    //     console.error('❌ Echo が定義されていません')
+    //     return
+    // }
 
-    // Pusherイベント受信
-    window.Echo.private('NewWords')
-        .listen('.notification', (e) => {
-        showNotice.value = true
-        originalText.value = e.original
-        translatedText.value = e.translated
+    // // Pusherイベント受信
+    // window.Echo.private('NewWords')
+    //     .listen('.notification', (e) => {
+    //     showNotice.value = true
+    //     originalText.value = e.original
+    //     translatedText.value = e.translated
 
-        setTimeout(() => {
-            showNotice.value = false
-            originalText.value = ''
-            translatedText.value = ''
-        }, 4000)
-        })
+    //     setTimeout(() => {
+    //         showNotice.value = false
+    //         originalText.value = ''
+    //         translatedText.value = ''
+    //     }, 4000)
+    //     })
 
-    //  APIポーリング
-    setInterval(async () => {
-        try {
-        const response = await axios.get('/api/vue/learn/notice')
-        console.log('送信成功:', response.data)
-        } catch (error) {
-        console.error('エラー:', error)
-        }
-    }, 30000)
-    })
+    // //  APIポーリング
+    // setInterval(async () => {
+    //     try {
+    //     const response = await axios.get('/api/vue/learn/notice')
+    //     console.log('送信成功:', response.data)
+    //     } catch (error) {
+    //     console.error('エラー:', error)
+    //     }
+    // }, 30000)
+    // })
 
     async function logout() {
         try {

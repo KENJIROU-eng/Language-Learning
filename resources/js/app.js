@@ -2,6 +2,7 @@ import './bootstrap';
 import Alpine from 'alpinejs';
 import Echo from 'laravel-echo';
 import Pusher from 'pusher-js';
+import '../css/app.css';
 //Pusher and Laravel Echo initialization
 window.Pusher = Pusher;
 window.Echo = new Echo({
