@@ -1,65 +1,24 @@
-- This application is created by  below techniques.
+URL: https://vue-learn-language.vercel.app/
+(you can see the application design　Vue 3 + Vite + Tailwind CSS　（SPA）)
+
+This application is created by below techniques
+・Vue.js
+
 ・Laravel
-    
-    ・Tailwind CSS
-    
-    ・JavaScript
-    
-    ・Google maps API
-    
-    ・Weather API
-    
-    ・Paypal API
-    
-    ・Pusher API
-    
-    ・Livewire
-    
-- This application has three main pages.
 
-        1. Post page (Livewire)
+・Tailwind CSS
 
-        2. Itinerary page (Google maps & Weather API)
+・Pusher API
 
-      1. belonging lists
+・DeepL API (Translation API)
 
-      2. bill  (Paypal API)
+This application has three main features
 
-        3. Group page & Realtime chat  (Puhser API + Laravel Echo)
+  1. Translate languages and create word lists at the same time (DeepL API)
 
-- Video
-    
-    ★ post (Livewire)
-    
-    https://drive.google.com/file/d/1As-P7OTQHnkwB9YyzGu5h84QrLBnibhX/view?usp=drive_link
-    
-    ★ Itinerary
-    
-    ◆Create　
-    
-    https://drive.google.com/file/d/1CLANWu-ShqidAFyNGcpwM25oIdK7PiSe/view?usp=drive_link
-    
-    ◆Belonging
-    
-    ▲Create
-    
-    https://drive.google.com/file/d/1-22omDJyZDKa1wmA6mrB6UxPpkErY0xV/view?usp=drive_link
-    
-    ▲Check　
-    
-    https://drive.google.com/file/d/1PcBfiFpXq91B97vHCxinlk44YKNvsC8W/view?usp=drive_link
-    
-    ◆Bill
-    
-    https://drive.google.com/file/d/1n0FThWjxK3os8iq_-SmYTfIdCY5XwF5H/view?usp=drive_link
-    
-    ★ Realtime chat
-    
-    https://drive.google.com/file/d/1CWtEq2LU6a8sTJdtIX80XLSjM_SZcjvG/view?usp=drive_link
-    
-- URL
-    
-    https://gi-tripeas-main-mifkte.laravel.cloud/
+  2. Word notification periodically (Pusher API, you can choose the time)
+
+  3. Play a game to memorize the words in word lists
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
