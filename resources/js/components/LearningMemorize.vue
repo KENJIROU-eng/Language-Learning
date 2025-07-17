@@ -45,7 +45,7 @@
             <div v-if="isAnswered" class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 w-full max-w-sm shadow-lg border border-white/20">
             <h2 class="text-xl font-semibold mb-2 text-center">Japanese</h2>
             <p class="text-center text-2xl font-bold text-white mb-4">
-                {{ wordSet[counter][0] }}
+                {{ wordSet[counter][1] }}
             </p>
             <button
                 @click="nextQuiz"
